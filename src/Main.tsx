@@ -1,32 +1,10 @@
-import { App } from './components/App'
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
-import * as ReactDOM from "react-dom/client";
-import React, { Suspense } from 'react';
-import { About } from './components/Pages/About';
-import { Shop } from './components/Pages/Shop';
+import { createRoot } from "react-dom/client";
+import { App } from "./Components/App";
+import "./main.module.scss";
+const root = createRoot(document.getElementById("root"));
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <App />,
-        children: [
-            {
-                path: '/about',
-                element: <Suspense fallback={"Loading..."}><About /></Suspense>
-            }, {
-                path: '/shop',
-                element: <Suspense fallback={"Loading..."}><Shop /></Suspense>
-            }
-        ]
-    },
-]);
+if (!root) {
+  throw new Error("root is not found!");
+}
 
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
-        <RouterProvider router={router} />
-    </React.StrictMode>
-);
+root.render(<App />);

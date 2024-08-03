@@ -25,21 +25,6 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
     },
-    // {
-    //     exclude: /node_modules/,
-    //     test: /\.[jt]sx?$/,
-    //     use: [
-    //         {
-    //             loader: 'ts-loader',
-    //             options: {
-    //                 getCustomTransformers: () => ({
-    //                     before: [isDev && ReactRefreshTypeScript()].filter(Boolean),
-    //                 }),
-    //                 transpileOnly: true,
-    //             }
-    //         }
-    //     ]
-    // }, 
     {
         test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
