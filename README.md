@@ -2,9 +2,13 @@
 
 ### Simple Webpack config for React application with Babel config, Typescript, SASS and images supporting
 
-```git clone https://github.com/CatalystoEyes/Webpack-template.git```
+```bash
+git clone https://github.com/CatalystoEyes/Webpack-template.git
+```
 
-```cd Webpack-template```
+```bash
+cd Webpack-template
+```
 
 ```npm i```
 
