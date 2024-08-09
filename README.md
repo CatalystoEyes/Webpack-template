@@ -18,5 +18,5 @@ cd Webpack-template
 
 ### Run application with webpack 
 ```bash
-npm run start``` or ```npm run build:dev/prod
+npm run start or npm run build:dev/prod
 ```
