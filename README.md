@@ -6,8 +6,4 @@
 
 ```npm i```
 
-```npm run start```
-
-OR
-
-```npm run build:dev & npm run build:prod```
+```npm run start``` OR ```npm run build:dev/prod```
